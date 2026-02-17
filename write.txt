@@ -1,0 +1,17 @@
+The quick brwon fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog .
+the quick brown fox jumps over the lazy dog. 
+The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog .
+the quick brown fox jumps over the lazy dog .
+
+Passport:-
+Passport is Express-compatible authentication middleware for Node.js.
+Passport-Local Mongoose
+Passport-Local Mongoose is a Mongoose plugin that simplifies building username and password login with Passport.
+
+Deployment :
+username:ansh-db
+password:5xLcvseYYOxSrgFQ
+
+Add your connection string into your application code:
+mongodb+srv://ansh-db:5xLcvseYYOxSrgFQ@cluster0.sk4jylh.mongodb.net/?appName=Cluster0
