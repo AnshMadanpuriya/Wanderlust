@@ -23,6 +23,10 @@ const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
 
+app.get("/", (req, res) => {
+   res.send("Wanderlust App is Live 🚀");
+});
+
 main()
   .then(() => {
     console.log("Connected to DB");
@@ -68,8 +72,6 @@ const sessionOptions = {
 
 app.use(session(sessionOptions));
 
-
-app.use(session(sessionOptions));
 app.use(flash());
 
 app.use(passport.initialize());
@@ -98,9 +100,11 @@ app.use((err, req, res, next) => {
   res.status(statusCode).send(message);
 });
 
+
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log(`Server is Running on port ${port}`);
 });
+
 
