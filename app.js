@@ -24,7 +24,7 @@ const userRouter = require("./routes/user.js");
 const dbUrl = process.env.ATLASDB_URL;
 
 app.get("/", (req, res) => {
-   res.send("Wanderlust App is Live 🚀");
+   res.send("/listings");
 });
 
 main()
