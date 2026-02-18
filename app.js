@@ -23,8 +23,9 @@ const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
 
-app.get("/", (req, res) => {
-   res.send("/listings");
+router.get("/", async (req, res) => {
+   const allListings = await Listing.find({});
+   res.render("listings/index", { allListings });
 });
 
 main()
